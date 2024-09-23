@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <!-- Linking external CSS for styling -->
-     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Egita Nevil Portfolio</title>
+
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- Hero Section-->
-         <section id="hero" class="hero">
-         <div class="hero content"></div>
-         <div class="hero image"></div>
-         <img src=" image .jpg" alt="profile picture" class="profile picture">
-         </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 style="color: black;">Hi, I'm Egita Nevil</h1>
+            <p style="color: black;">A Healthcare Practitioner | Aspiring Software Engineer</p>
+            <a href="#about" class="hero-btn">Learn More</a>
+        </div>
+        <div class="hero-image">
+            <img style="border-radius: 32px;" src="image .jpg" alt="Hero Image" />
+        </div>
+    </section>
 
-<!-- About Me Section -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I'm Egita Nevil, a passionate healthcare practitioner with a love for software engineering and evolving technologies. As a beginner, I enjoy coding and solving complex problems. 
-        I thrive on building scalable web applications and learning the latest technologies. My journey in tech is fueled by the Power Learn Project (PLP) full scholarship and the desire to create innovative solutions that make a difference.
-    </p>
-</section>
+    <!-- About Me Section -->
+    <section style="margin-top: -20%;" id="about">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I'm Egita Nevil, a passionate healthcare practitioner and beginner in software engineering. I'm currently learning Python, JavaScript, and other technologies through the Power Learn Project. My journey is driven by the desire to build solutions that impact lives.
+                </p>
+    </section>
 
-<!-- Educational Background Section -->
-<section id="education">
-    <h2>Educational Background</h2>
-    <p>Diploma in Clinical Medicine and Community Health from Kabale Institute of Health Sciences, Uganda (Graduated 2019).</p>
-    <p>Currently pursuing a Bachelor's of Pharmacy at Victoria University, Uganda.</p>
-    <a href="Egita Nevil CV.pdf " download>Download my CV</a>
-</section>
+    <!-- Educational Background Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Educational Background</h2>
+            <p>Diploma in Clinical Medicine from Kabale Institute of Health Sciences, Uganda (2019)</p>
+            <p>Currently pursuing Bachelor's of Pharmacy at Victoria University, Uganda.</p>
+            <a href="Egita Nevil CV.pdf" class="btn" download>Download my CV</a>
+        </div>
+    </section>
 
-<!-- Programming Languages Section -->
-<section id="programming-languages">
-    <h2>Programming Languages</h2>
-    <ol>
-        <li>Learning Python at PLP</li>
-        <li>Learning JavaScript at PLP</li>
-        <li>HTML & CSS</li>
-        <li>Learning Java at PLP</li>
-        <li>SQL</li>
-    </ol>
-</section>
+    <!-- Programming Languages Section -->
+    <section id="programming-languages" class="section bg-light">
+        <div class="container">
+            <h2>Programming Languages</h2>
+            <ul class="language-list">
+                <li>Learning Python at PLP</li>
+                <li>Learning JavaScript at PLP</li>
+                <li>HTML & CSS</li>
+                <li>Learning Java at PLP</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
 
-<!-- Interests Section -->
-<section id="interests">
-    <h2>Interests</h2>
-    <p>I am particularly excited about Artificial Intelligence, Blockchain technologies, and Open Source contributions. I love exploring new frameworks, improving my skills in data science, and contributing to developer communities.</p>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li>
+                    <h3>Portfolio</h3>
+                    <p>Simple portfolio built using HTML & CSS. <a href="https://github.com/Nevil123-cloud/Simple-portfolio-contact.git" target="_blank">View Code</a></p>
+                </li>
+                <li>
+                    <h3>Contact Form</h3>
+                    <p>Built using HTML & CSS. <a href="https://github.com/Nevil123-cloud/Simple-portfolio-contact.git" target="_blank">View Code</a></p>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <h3>Project 1: Portfolio</h3>
-            <p>built a simple Portfolio using HTML & CSS. <a href="https://github.com/Nevil123-cloud/Simple-portfolio-contact.git " target="_blank">View Code</a></p>
-        </li>
-        <li>
-            <h3>Project 2: Contact me </h3>
-            <p>Built using HTML & CSS <a href=" https://github.com/Nevil123-cloud/Simple-portfolio-contact.git" target="_blank">View Code</a></p>
-        </li>
-    </ul>
-</section>
+    <!-- Contact Me Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-<!-- Contact Me Section -->
-<section id="contact">
-    <h2>Contact Me</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-    <form action="submit-form.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Egita Nevil. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+</body>
 
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 Egita Nevil. All Rights Reserved.</p>
-</footer>
+</html>
